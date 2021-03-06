@@ -1,4 +1,4 @@
-# TOR SUPPORT IN LITECOIN
+# TOR SUPPORT IN WATTCOIN
 
 It is possible to run Wattcoin Core as a Tor hidden service, and connect to such services.
 
