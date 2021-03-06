@@ -112,7 +112,7 @@ public:
 
         genesis = CreateGenesisBlock(1317972665, 2084524493, 0x1e0ffff0, 1, 25 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-		LogPrintf("New Wattcoin Merkal Hash: %s", consensus.hash.ToString());
+		LogPrintf("New Wattcoin Merkal Hash: %s", genesis.hashMerkleRoot.ToString());
         assert(consensus.hashGenesisBlock == uint256S("0x"));
         assert(genesis.hashMerkleRoot == uint256S("0x"));
 
