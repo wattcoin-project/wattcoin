@@ -116,8 +116,8 @@ public:
         printf("Genesis Hash: %s\n", consensus.hashGenesisBlock.ToString().c_str());
         printf("Merkal Hash: %s\n", genesis.hashMerkleRoot.ToString().c_str());
 
-        assert(consensus.hashGenesisBlock == uint256S("0x65b6d6ccfc1e361955c982c16e2eafd7304ee23d7201c0c7e307d6da8cf6091e"));
-        assert(genesis.hashMerkleRoot == uint256S("0x31f5955565ba7fc54570cf8bb58f121fb9fd448a1cd4108a61a55c012f0ee79a"));
+        assert(consensus.hashGenesisBlock == uint256S("0x67356b01a7b4032ae5ba08d4cb08d92c0032231cb252e91ba637566105b58cd1"));
+        assert(genesis.hashMerkleRoot == uint256S("0xbcf0c02db357335be1a26d0b2dc90cae804157dd9677f3efd7bef4d38a3b8a61"));
 
         // Note that of those which support the service bits prefix, most only support a subset of
         // possible options.
