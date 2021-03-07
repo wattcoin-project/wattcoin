@@ -112,11 +112,9 @@ public:
 
         genesis = CreateGenesisBlock(1317972665, 2084524493, 0x1e0ffff0, 1, 25 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        std::cout << genesis.hashMerkleRoot.ToString() << std::endl;
-        printf("New Wattcoin Merkal Hash: %s", genesis.hashMerkleRoot.ToString());
-		LogPrintf("New Wattcoin Merkal Hash: %s", genesis.hashMerkleRoot.ToString());
+        std::cout << consensus.hashGenesisBlock.ToString() << std::endl;
         assert(consensus.hashGenesisBlock == uint256S("0x"));
-        assert(genesis.hashMerkleRoot == uint256S("0x"));
+        assert(genesis.hashMerkleRoot == uint256S("0x31f5955565ba7fc54570cf8bb58f121fb9fd448a1cd4108a61a55c012f0ee79a"));
 
         // Note that of those which support the service bits prefix, most only support a subset of
         // possible options.
