@@ -323,7 +323,7 @@ public:
         printf("REGTEST Genesis Hash: %s\n", consensus.hashGenesisBlock.ToString().c_str());
         printf("REGTEST Merkal Hash: %s\n", genesis.hashMerkleRoot.ToString().c_str());
 
-        assert(consensus.hashGenesisBlock == uint256S("0x530827f38f93b43ed12af0b3ad25a288dc02ed74d6d7857862df51fc56c416f9"));
+        assert(consensus.hashGenesisBlock == uint256S("0x46239a208aa7ac369861fce2753e464da4ea4ebf7596d4f9bd4afaabbef0bed8"));
         assert(genesis.hashMerkleRoot == uint256S(""));
 
         vFixedSeeds.clear(); //!< Regtest mode doesn't have any fixed seeds.
