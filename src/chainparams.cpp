@@ -229,8 +229,8 @@ public:
         printf("TESTNET Genesis Hash: %s\n", consensus.hashGenesisBlock.ToString().c_str());
         printf("TESTNET Merkal Hash: %s\n", genesis.hashMerkleRoot.ToString().c_str());
 
-        assert(consensus.hashGenesisBlock == uint256S("0x510c714437b0256467e8c5873c72bc65c426f997a60ef6ed48379c695df029c3"));
-        assert(genesis.hashMerkleRoot == uint256S("0x8e9364d15a4eea8e8ab726e267c138d87eb7ff4e3d61ea9496d26f0396cfe0e9"));
+        assert(consensus.hashGenesisBlock == uint256S("0x3f35ee51c22d8052d502943c485b8aa34797bd6691a7566b7624d229d715ee93"));
+        assert(genesis.hashMerkleRoot == uint256S("0xbcf0c02db357335be1a26d0b2dc90cae804157dd9677f3efd7bef4d38a3b8a61"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
