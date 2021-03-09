@@ -235,9 +235,7 @@ public:
         vFixedSeeds.clear();
         vSeeds.clear();
         // nodes with support for servicebits filtering should be at the top
-        vSeeds.emplace_back("testnet-seed.wattcointools.com");
-        vSeeds.emplace_back("seed-b.wattcoin.loshan.co.uk");
-        vSeeds.emplace_back("dnsseed-testnet.thrasher.io");
+        vSeeds.emplace_back("dnsseed.wattcoin.co.uk");
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,135);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,196);
@@ -319,8 +317,12 @@ public:
 
         UpdateVersionBitsParametersFromArgs(args);
 
-        genesis = CreateGenesisBlock(1296688602, 0, 0x207fffff, 1, 25 * COIN);
+        genesis = CreateGenesisBlock(1615321963, 0, 0x207fffff, 1, 25 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
+
+        printf("REGTEST Genesis Hash: %s\n", consensus.hashGenesisBlock.ToString().c_str());
+        printf("REGTEST Merkal Hash: %s\n", genesis.hashMerkleRoot.ToString().c_str());
+
         assert(consensus.hashGenesisBlock == uint256S("0x530827f38f93b43ed12af0b3ad25a288dc02ed74d6d7857862df51fc56c416f9"));
         assert(genesis.hashMerkleRoot == uint256S(""));
 
