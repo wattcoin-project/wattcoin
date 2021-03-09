@@ -324,7 +324,7 @@ public:
         printf("REGTEST Merkal Hash: %s\n", genesis.hashMerkleRoot.ToString().c_str());
 
         assert(consensus.hashGenesisBlock == uint256S("0x46239a208aa7ac369861fce2753e464da4ea4ebf7596d4f9bd4afaabbef0bed8"));
-        assert(genesis.hashMerkleRoot == uint256S(""));
+        assert(genesis.hashMerkleRoot == uint256S("0xbcf0c02db357335be1a26d0b2dc90cae804157dd9677f3efd7bef4d38a3b8a61"));
 
         vFixedSeeds.clear(); //!< Regtest mode doesn't have any fixed seeds.
         vSeeds.clear();      //!< Regtest mode doesn't have any DNS seeds.
